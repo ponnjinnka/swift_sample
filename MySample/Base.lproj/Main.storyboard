@@ -20,28 +20,12 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N24-2v-Ljm">
-                                <rect key="frame" x="53" y="281" width="30" height="30"/>
-                                <state key="normal" title="Yes"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hm-cs-uqA">
-                                <rect key="frame" x="256" y="281" width="30" height="30"/>
-                                <state key="normal" title="No"/>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="N24-2v-Ljm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-100" id="NLI-nw-kxK"/>
-                            <constraint firstItem="N24-2v-Ljm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cAT-aX-Dzn"/>
-                            <constraint firstItem="4hm-cs-uqA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="100" id="j2Q-QI-uhz"/>
-                            <constraint firstItem="4hm-cs-uqA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ltn-ae-ZTJ"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="33.75" y="34.859154929577464"/>
+            <point key="canvasLocation" x="31.875" y="33.802816901408448"/>
         </scene>
     </scenes>
 </document>

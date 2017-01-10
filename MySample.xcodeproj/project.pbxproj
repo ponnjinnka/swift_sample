@@ -299,6 +299,7 @@
 				2154354F1DF5C9B6005F812C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,41 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        print("ありがとう")
-        
-        let msg1 = "こんにちは"
-        let msg2 = "サンキュー"
-        let msg3 = "さようなら"
-        print(msg1, msg2, msg3, separator:"/" )
-        
-        let tax = 0.08
-        print(tax)
-        
-        kuji()
-        }
     
-    func kuji() {
-        let num = arc4random_uniform(10)+1
-        if num>=7 {
-            let msg = "あたり"
-            print(num, msg)
-        }else{
-            let msg = "はずれ"
-            print(num, msg)
-            
-        }
-    }
+    @IBOutlet weak var myLabel: UILabel!
     
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func hello(_ sender: Any) {
+        self.myLabel.text = "＼(^o^)／"
     }
-
-
+    @IBAction func thankYou(_ sender: Any) {
+        self.myLabel.text = "・ω・"
+    }
 }
 

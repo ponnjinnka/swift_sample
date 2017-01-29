@@ -10,24 +10,5 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var myLabel: UILabel!
-    
-    @IBAction func hello(_ sender: Any) {
-        regist()
-        self.myLabel.text = "＼(^o^)／"
-    }
-    @IBAction func thankYou(_ sender: Any) {
-        regist()
-        self.myLabel.text = "・ω・"
-    }
-    
-    @IBAction func back(_ sender: Any) {
-        self.myLabel.text = pastLabel
-    }
-    
-    var pastLabel: String = ""
-    func regist(){
-        pastLabel = self.myLabel.text!
-    }
 }
 

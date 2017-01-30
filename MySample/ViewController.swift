@@ -25,16 +25,26 @@ class ViewController: UIViewController {
         myLabel.backgroundColor = UIColor.lightGray
         
         view.addSubview(myLabel)
-        
-        let path = Bundle.main.path(forResource: "myapp.plist", ofType: nil)
-        let myappList = NSMutableDictionary(contentsOfFile: path!)
-        print(myappList?.value(forKey: "number") as! Int)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 
+    /* Labelの値をplistに保存する */
+    @IBAction func save(_ sender: Any) {
+        let num = label.text
+        let path = Bundle.main.path(forResource: "myapp", ofType: "plist")
+        let myappList = NSMutableDictionary(contentsOfFile: path!)
+        myappList?.setValue(Int(num!), forKey: "number")
+    }
+    /* Labelの値をplistの値で書き換える */
+    @IBAction func update(_ sender: Any) {
+        let path = Bundle.main.path(forResource: "myapp", ofType: "plist")
+        let myappList = NSMutableDictionary(contentsOfFile: path!)
+        label.text = String(describing: myappList?.value(forKey: "number"))
+    }
+    
     @IBAction func random(_ sender: Any) {
         let num = arc4random_uniform(1000)
         label.text = String(num)

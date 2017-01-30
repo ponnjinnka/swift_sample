@@ -25,6 +25,10 @@ class ViewController: UIViewController {
         myLabel.backgroundColor = UIColor.lightGray
         
         view.addSubview(myLabel)
+        
+        let path = Bundle.main.path(forResource: "myapp.plist", ofType: nil)
+        let myappList = NSMutableDictionary(contentsOfFile: path!)
+        print(myappList?.value(forKey: "number") as! Int)
     }
     
     override func didReceiveMemoryWarning() {
